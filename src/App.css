@@ -1,0 +1,67 @@
+
+* {
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+.body, p, h1, ul, li, blockquote{
+  padding: 0px;
+  margin: 0px;
+  font-family: Montserrat, Montserrat-regular, Montserrat-bold;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media(max-width: 1080px){
+  html{
+    font-size: 93.75%;
+  }
+}
+
+@media(max-width: 720px){
+  .body, p, h1, ul, li, blockquote{
+    padding: 0px;
+    margin: 0px;
+    font-family: Montserrat, Montserrat-regular, Montserrat-bold;
+    width: 100%;
+    /* overflow-x: hidden; */
+  
+    @media only screen and (max-width: 415px) {
+      body {
+        width: 100%;
+        box-sizing: border-box;
+        /* overflow-x: hidden; */
+  
+      }
+    }
+    
+  }
+  html{
+    font-size: 87.5%;
+  }
+  @media (max-width: 415px) {
+    body {
+      overflow-x: hidden;
+    }
+  }
+}
+
+[data-anime] {
+  opacity: 0;
+  transform: translate3d(-40px, 0, 0);
+  transition: .3s;
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+} 
