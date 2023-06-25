@@ -53,6 +53,11 @@ img {
       overflow-x: hidden;
     }
   }
+  @media (max-width: 720px) {
+    body {
+      overflow-x: hidden;
+    }
+  }
 }
 
 [data-anime] {
